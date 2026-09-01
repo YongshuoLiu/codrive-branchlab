@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="closed_reveal_obstacle_0085_B" town="Town12" source_route_id="s3_Town12_ParkedObstacle_2878_0" candidate_source="Bench2Drive-Base" candidate_source_clip="s3_Town12_ParkedObstacle_2878_0" candidate_route_length_m="87.000" candidate_geometry_sha256="eccf534b22cb9e77cee2eb9c0c297185d9aad3c8b970b2d2e77e184d09c71413" benchmark_variant="B" paired_route_a_id="closed_reveal_obstacle_0085">
+    <weathers>
+      <weather route_percentage="0" cloudiness="40.0" precipitation="0.0" precipitation_deposits="10.0" wetness="10.0" wind_intensity="10.0" sun_azimuth_angle="250.0" sun_altitude_angle="8.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+      <weather route_percentage="100" cloudiness="40.0" precipitation="0.0" precipitation_deposits="10.0" wetness="10.0" wind_intensity="10.0" sun_azimuth_angle="250.0" sun_altitude_angle="8.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+    </weathers>
+    <waypoints>
+      <position x="-1029.612500" y="4075.667800" z="358.348400" />
+      <position x="-942.612800" y="4075.904900" z="361.974200" />
+    </waypoints>
+    <scenarios>
+      <scenario name="ClosedRevealObstacle_0085_B" type="ClosedRevealObstacle">
+        <car_a_dist value="10" />
+        <car_a_speed value="20" />
+        <b_gap value="14" />
+        <car_a_dir value="left" />
+        <stop_timeout value="8" />
+        <obstacle_model value="vehicle.seat.leon" />
+        <obstacle_yaw_offset value="90" />
+        <trigger_point x="-1003.612596" y="4075.738665" z="359.412940" yaw="0.154698" />
+        <original_trigger_point x="-987.612656" y="4075.782350" z="360.104342" yaw="0.171887" />
+        <scenario_arm_point x="-1003.612596" y="4075.738665" z="359.412940" yaw="0.154698" />
+        <cooperative_trigger_point x="-999.612611" y="4075.749650" z="359.585835" yaw="0.171887" />
+        <event_trigger_point x="-993.612634" y="4075.765955" z="359.845134" yaw="0.166157" />
+        <collision_point x="-987.612656" y="4075.782350" z="360.104342" yaw="0.171887" />
+        <cooperative_enabled value="false" />
+        <cooperative_notice_distance value="1.5" />
+        <cooperative_prompt value="The static object at position &lt;FRONT_CAR_POS&gt; is blocking the ego lane." />
+        <closed_loop_family value="static_obstacle_reveal" />
+        <hint_lead_distance value="12.0" />
+        <event_lead_distance value="6.0" />
+        <event_trigger_tolerance value="1.5" />
+        <event_force_after_hint_time value="2.0" />
+        <event_trigger_policy value="disabled_route_b_control" />
+        <preserve_background_traffic value="true" />
+        <background_clear_radius value="14.0" />
+        <keep_obstacle value="false" />
+        <local_green_light_radius value="60.0" />
+        <route_b_control value="true" />
+      </scenario>
+    </scenarios>
+  </route>
+</routes>

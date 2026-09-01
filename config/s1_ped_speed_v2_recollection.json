@@ -1,0 +1,85 @@
+{
+  "decision_parameters": {
+    "accelerate_cap_mps": 20,
+    "accelerate_delta_mps": 3.0,
+    "brake_min_target_mps": 1.5,
+    "brake_speed_ratio": 0.45,
+    "deadlock_hold_s": 2.0,
+    "deadlock_speed_mps": 0.1,
+    "lane_actor_front_clearance_m": 35.0,
+    "lane_actor_min_ttc_s": 4.0,
+    "lane_actor_rear_clearance_m": 15.0,
+    "lane_change_min_target_mps": 4.0,
+    "lane_change_post_distance_m": 28.0,
+    "lane_change_pre_distance_m": 14.0,
+    "lane_change_transition_distance_m": 6.0,
+    "lane_geometry_min_coverage": 0.8,
+    "lane_min_width_m": 2.4,
+    "max_decision_active_s": 20.0,
+    "post_clear_deadlock_hold_s": 3.0,
+    "raw_actor_radius_m": 100.0,
+    "stop_hold_s": 0.5,
+    "stop_speed_mps": 0.3
+  },
+  "output_root": "/mnt/DATA/yongshuoliu/simlingo/RL/data/counterfactual_decision_v1/_recollected/S1_PED_SPEED_V2",
+  "project_root": "/mnt/DATA/yongshuoliu/simlingo",
+  "quality_thresholds": {
+    "maximum_lane_center_error_m": 1.0,
+    "minimum_free_disk_gb": 1.8,
+    "minimum_full_lane_displacement_ratio": 0.65,
+    "minimum_lane_center_hold_s": 0.5,
+    "minimum_saved_frames": 15,
+    "minimum_stop_hold_s": 0.5,
+    "onset_hazard_position_tolerance_m": 0.75,
+    "onset_position_tolerance_m": 0.75,
+    "onset_speed_tolerance_mps": 0.75,
+    "onset_yaw_tolerance_deg": 1.0,
+    "stop_speed_mps": 0.3
+  },
+  "route_index_start": 1,
+  "routes_per_scenario": 162,
+  "s1_policy": {
+    "legacy_marker_rule": "missing marker or policy_version != S1_PED_SPEED_V2",
+    "ped_speed_mps": 8.5,
+    "policy_version": "S1_PED_SPEED_V2",
+    "recollected_decisions": [
+      "Accelerate",
+      "Maintain"
+    ]
+  },
+  "scenarios": {
+    "S1": {
+      "decisions": [
+        "Accelerate",
+        "Maintain"
+      ],
+      "family": "occluded_pedestrian",
+      "name": "Pedestrian Emergence S1_PED_SPEED_V2"
+    }
+  },
+  "schema_version": "counterfactual_decision_v1",
+  "source_route_root": "/mnt/DATA/yongshuoliu/simlingo/RL/routes/decision_v2_s1_ped_speed_8p5",
+  "workers": [
+    {
+      "gpu": 0,
+      "graphics_adapter": 1,
+      "port": 32400,
+      "slot": 0,
+      "tm_port": 42400
+    },
+    {
+      "gpu": 1,
+      "graphics_adapter": 2,
+      "port": 32500,
+      "slot": 1,
+      "tm_port": 42500
+    },
+    {
+      "gpu": 2,
+      "graphics_adapter": 0,
+      "port": 32600,
+      "slot": 2,
+      "tm_port": 42600
+    }
+  ]
+}

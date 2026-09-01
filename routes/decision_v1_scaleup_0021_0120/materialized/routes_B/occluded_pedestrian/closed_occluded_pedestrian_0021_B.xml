@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="closed_occluded_pedestrian_0021_B" town="Town12" source_route_id="s1_Town12_DynamicObjectCrossing_1810_0" candidate_source="Bench2Drive-Base" candidate_source_clip="s1_Town12_DynamicObjectCrossing_1810_0" candidate_route_length_m="90.000" candidate_geometry_sha256="f5d16351ae113b249ac3aa2f8ec43bc5deb4f0f9630838650dd4657d2d809f81" benchmark_variant="B" paired_route_a_id="closed_occluded_pedestrian_0021">
+    <weathers>
+      <weather route_percentage="0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="20.0" sun_altitude_angle="45.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+      <weather route_percentage="100" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="20.0" sun_altitude_angle="45.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+    </weathers>
+    <waypoints>
+      <position x="1985.397600" y="1914.188100" z="358.536600" />
+      <position x="1985.556500" y="1824.188200" z="357.300800" />
+    </waypoints>
+    <scenarios>
+      <scenario name="ClosedOccludedPedestrian_0021_B" type="ClosedOccludedPedestrian">
+        <cross_dist value="22.0" />
+        <ped_speed value="3.0" />
+        <reaction_time value="1.5" />
+        <min_trigger_dist value="9.0" />
+        <occluder_model value="vehicle.mitsubishi.fusorosa" />
+        <ped_age value="adult" />
+        <end_dist value="30" />
+        <trigger_point x="1985.442103" y="1891.188143" z="358.254663" yaw="-89.885409" />
+        <original_trigger_point x="1985.430503" y="1897.188132" z="358.330743" yaw="-89.885409" />
+        <scenario_arm_point x="1985.442103" y="1891.188143" z="358.254663" yaw="-89.885409" />
+        <cooperative_trigger_point x="1985.449803" y="1887.188151" z="358.202882" yaw="-89.885409" />
+        <event_trigger_point x="1985.467213" y="1878.188168" z="358.085983" yaw="-89.891138" />
+        <collision_point x="1985.484513" y="1869.188184" z="357.967422" yaw="-89.891138" />
+        <cooperative_enabled value="false" />
+        <cooperative_notice_distance value="1.5" />
+        <cooperative_prompt value="The pedestrian at position &lt;FRONT_CAR_POS&gt; is about to enter the ego lane." />
+        <closed_loop_family value="occluded_pedestrian" />
+        <hint_lead_distance value="18.0" />
+        <event_lead_distance value="9.0" />
+        <event_trigger_tolerance value="1.5" />
+        <event_force_after_hint_time value="2.0" />
+        <event_trigger_policy value="disabled_route_b_control" />
+        <local_green_light_radius value="60.0" />
+        <route_b_control value="true" />
+      </scenario>
+    </scenarios>
+  </route>
+</routes>

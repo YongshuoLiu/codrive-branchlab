@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="closed_occluded_pedestrian_0002" town="Town02" source_route_id="8003">
+    <weathers>
+      <weather route_percentage="0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+      <weather route_percentage="100" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+    </weathers>
+    <waypoints>
+      <position x="55.7" y="306.5" z="0.0" />
+      <position x="110.7" y="306.6" z="0.0" />
+    </waypoints>
+    <scenarios>
+      <scenario name="ClosedOccludedPedestrian_0002" type="ClosedOccludedPedestrian">
+        <cross_dist value="22.0" />
+        <ped_speed value="3.0" />
+        <reaction_time value="1.5" />
+        <min_trigger_dist value="9.0" />
+        <occluder_model value="static.prop.busstop" />
+        <ped_age value="child" />
+        <end_dist value="30" />
+        <trigger_point x="69.699964" y="306.525454" z="0.000000" yaw="0.104174" />
+        <original_trigger_point x="63.700000" y="306.500000" z="0.000000" yaw="0.000000" />
+        <scenario_arm_point x="69.699964" y="306.525454" z="0.000000" yaw="0.104174" />
+        <cooperative_trigger_point x="73.699957" y="306.532727" z="0.000000" yaw="0.104174" />
+        <event_trigger_point x="82.699942" y="306.549091" z="0.000000" yaw="0.104174" />
+        <collision_point x="91.699927" y="306.565454" z="0.000000" yaw="0.104174" />
+        <cooperative_enabled value="true" />
+        <cooperative_notice_distance value="1.5" />
+        <cooperative_prompt value="The pedestrian at position &lt;FRONT_CAR_POS&gt; is about to enter the ego lane." />
+        <closed_loop_family value="occluded_pedestrian" />
+        <hint_lead_distance value="18.0" />
+        <event_lead_distance value="9.0" />
+        <event_trigger_tolerance value="1.5" />
+        <event_force_after_hint_time value="2.0" />
+        <event_trigger_policy value="distance_or_timeout" />
+      </scenario>
+    </scenarios>
+  </route>
+</routes>

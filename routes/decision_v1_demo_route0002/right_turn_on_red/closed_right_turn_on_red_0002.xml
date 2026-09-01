@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="closed_right_turn_on_red_0002" town="Town04" source_route_id="40003">
+    <weathers>
+      <weather route_percentage="0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+      <weather route_percentage="100" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+    </weathers>
+    <waypoints>
+      <position x="290.3" y="-250.0" z="0.00" />
+      <position x="288.3" y="-249.9" z="0.00" />
+      <position x="286.3" y="-249.9" z="0.00" />
+      <position x="284.3" y="-249.9" z="0.00" />
+      <position x="282.3" y="-249.9" z="0.00" />
+      <position x="280.3" y="-249.9" z="0.00" />
+      <position x="278.3" y="-249.9" z="0.00" />
+      <position x="276.3" y="-249.9" z="0.00" />
+      <position x="274.3" y="-249.8" z="0.00" />
+      <position x="272.3" y="-249.8" z="0.00" />
+      <position x="270.3" y="-249.8" z="0.00" />
+      <position x="268.3" y="-249.8" z="0.00" />
+      <position x="258.7" y="-258.4" z="0.02" />
+      <position x="258.7" y="-260.4" z="0.02" />
+      <position x="258.7" y="-262.4" z="0.02" />
+      <position x="258.7" y="-264.4" z="0.02" />
+      <position x="258.7" y="-266.4" z="0.02" />
+      <position x="258.7" y="-268.4" z="0.02" />
+      <position x="258.7" y="-270.4" z="0.02" />
+      <position x="258.7" y="-272.4" z="0.02" />
+      <position x="258.7" y="-274.4" z="0.02" />
+      <position x="258.8" y="-276.4" z="0.02" />
+      <position x="258.8" y="-278.4" z="0.02" />
+      <position x="258.8" y="-280.4" z="0.02" />
+      <position x="258.8" y="-282.4" z="0.02" />
+      <position x="258.8" y="-284.4" z="0.02" />
+      <position x="258.8" y="-286.4" z="0.02" />
+      <position x="258.8" y="-288.4" z="0.02" />
+    </waypoints>
+    <scenarios>
+      <scenario name="ClosedSignalizedJunctionRightTurnOnRed_0002" type="ClosedSignalizedJunctionRightTurnOnRed">
+        <flow_speed value="10" />
+        <source_dist_interval from="10" to="50" />
+        <trigger_point x="282.297502" y="-249.900000" z="0.000000" yaw="180.000000" />
+        <original_trigger_point x="288.300000" y="-249.900000" z="0.000000" yaw="179.600000" />
+        <scenario_arm_point x="282.297502" y="-249.900000" z="0.000000" yaw="180.000000" />
+        <cooperative_trigger_point x="278.297502" y="-249.900000" z="0.000000" yaw="180.000000" />
+        <event_trigger_point x="278.297502" y="-249.900000" z="0.000000" yaw="180.000000" />
+        <collision_point x="268.300000" y="-249.800000" z="0.000000" yaw="180.000000" />
+        <cooperative_enabled value="true" />
+        <cooperative_notice_distance value="1.5" />
+        <cooperative_prompt value="A vehicle approaching from the left will cross the ego right-turn path. Yield before turning right." />
+        <closed_loop_family value="right_turn_on_red_yield" />
+        <hint_lead_distance value="10.0" />
+        <event_lead_distance value="10.0" />
+        <event_trigger_tolerance value="1.5" />
+        <event_force_after_hint_time value="0.0" />
+        <event_trigger_policy value="distance_or_timeout" />
+      </scenario>
+    </scenarios>
+  </route>
+</routes>

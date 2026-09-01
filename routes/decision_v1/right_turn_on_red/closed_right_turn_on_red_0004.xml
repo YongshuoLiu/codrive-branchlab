@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="closed_right_turn_on_red_0004" town="Town01" source_route_id="codrive_rtor_town01_0011">
+    <weathers>
+      <weather route_percentage="0" cloudiness="65.0" precipitation="0.0" precipitation_deposits="60.0" wetness="70.0" wind_intensity="10.0" fog_density="5.0" sun_altitude_angle="35.0" sun_azimuth_angle="210.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+      <weather route_percentage="100" cloudiness="65.0" precipitation="0.0" precipitation_deposits="60.0" wetness="70.0" wind_intensity="10.0" fog_density="5.0" sun_altitude_angle="35.0" sun_azimuth_angle="210.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+    </weathers>
+    <waypoints>
+      <position x="154.06" y="16.02" z="0.00" />
+      <position x="154.06" y="16.81" z="0.00" />
+      <position x="154.06" y="17.78" z="0.00" />
+      <position x="154.06" y="19.16" z="0.00" />
+      <position x="154.06" y="20.82" z="0.00" />
+      <position x="154.05" y="22.98" z="0.00" />
+      <position x="154.05" y="25.49" z="0.00" />
+      <position x="154.05" y="28.46" z="0.00" />
+      <position x="154.04" y="31.70" z="0.00" />
+      <position x="154.04" y="34.83" z="0.00" />
+      <position x="154.03" y="37.52" z="0.00" />
+      <position x="154.03" y="39.62" z="0.00" />
+      <position x="154.03" y="41.22" z="0.00" />
+      <position x="154.03" y="41.64" z="0.00" />
+      <position x="154.03" y="42.02" z="0.00" />
+      <position x="154.03" y="42.62" z="0.00" />
+      <position x="154.03" y="43.66" z="0.00" />
+      <position x="154.03" y="45.07" z="0.00" />
+      <position x="154.02" y="46.80" z="0.00" />
+      <position x="153.91" y="49.00" z="0.00" />
+      <position x="153.25" y="51.38" z="0.00" />
+      <position x="151.69" y="53.55" z="0.00" />
+      <position x="149.32" y="54.92" z="0.00" />
+      <position x="146.39" y="55.38" z="0.00" />
+      <position x="143.06" y="55.47" z="0.00" />
+      <position x="139.54" y="55.49" z="0.00" />
+      <position x="136.06" y="55.49" z="0.00" />
+      <position x="132.97" y="55.49" z="0.00" />
+      <position x="130.10" y="55.49" z="0.00" />
+      <position x="127.04" y="55.49" z="0.00" />
+      <position x="125.040000" y="55.490000" z="0.000000" />
+      <position x="123.040000" y="55.490000" z="0.000000" />
+      <position x="121.040000" y="55.490000" z="0.000000" />
+    </waypoints>
+    <scenarios>
+      <scenario name="ClosedSignalizedJunctionRightTurnOnRed_0004" type="ClosedSignalizedJunctionRightTurnOnRed">
+        <flow_speed value="10.0" />
+        <source_dist_interval from="10" to="50" />
+        <trigger_point x="154.050000" y="24.998747" z="0.000000" yaw="90.070000" />
+        <source_provenance value="right_turn_clip_coop10_trigger2_spawnfar15_visible250_0011" />
+        <original_trigger_point x="154.060000" y="16.020000" z="0.000000" yaw="90.100000" />
+        <scenario_arm_point x="154.050000" y="24.998747" z="0.000000" yaw="90.070000" />
+        <cooperative_trigger_point x="154.040000" y="28.000000" z="0.000000" yaw="90.070000" />
+        <event_trigger_point x="154.040000" y="28.000000" z="0.000000" yaw="90.070000" />
+        <collision_point x="153.250000" y="51.380000" z="0.000000" yaw="105.499275" />
+        <cooperative_enabled value="true" />
+        <cooperative_notice_distance value="1.5" />
+        <cooperative_prompt value="The vehicle at position &lt;FRONT_CAR_POS&gt; will cross the ego right-turn path. Yield before turning right." />
+        <closed_loop_family value="right_turn_on_red_yield" />
+        <hint_lead_distance value="10.0" />
+        <event_lead_distance value="10.0" />
+        <event_trigger_tolerance value="1.5" />
+        <event_force_after_hint_time value="0.0" />
+        <event_trigger_policy value="distance_or_timeout" />
+        <clear_ego_lane_front_background value="true" />
+        <clear_ego_route_corridor_background value="true" />
+        <ego_lane_front_clear_distance value="60.0" />
+        <force_ego_traffic_light_green value="true" />
+      </scenario>
+    </scenarios>
+  </route>
+</routes>

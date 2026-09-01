@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="closed_lane_cut_in_0002" town="Town04" source_route_id="50006">
+    <weathers>
+      <weather route_percentage="0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+      <weather route_percentage="100" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="-1.0" sun_altitude_angle="45.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+    </weathers>
+    <waypoints>
+      <position x="8.080000" y="-92.700075" z="0.000000" />
+      <position x="8.070000" y="-94.700050" z="0.000000" />
+      <position x="8.060000" y="-96.700025" z="0.000000" />
+      <position x="8.05" y="-98.70" z="0.00" />
+      <position x="8.04" y="-100.70" z="0.00" />
+      <position x="8.04" y="-102.70" z="0.00" />
+      <position x="8.03" y="-104.70" z="0.00" />
+      <position x="8.02" y="-106.70" z="0.00" />
+      <position x="8.01" y="-108.70" z="0.00" />
+      <position x="8.00" y="-110.70" z="0.00" />
+      <position x="8.00" y="-112.70" z="0.00" />
+      <position x="7.99" y="-114.70" z="0.00" />
+      <position x="7.98" y="-116.70" z="0.00" />
+      <position x="7.97" y="-118.70" z="0.00" />
+      <position x="7.96" y="-120.70" z="0.00" />
+      <position x="7.96" y="-122.70" z="0.00" />
+      <position x="7.95" y="-124.70" z="0.00" />
+      <position x="7.94" y="-126.70" z="0.00" />
+      <position x="7.93" y="-128.70" z="0.00" />
+      <position x="7.93" y="-130.70" z="0.00" />
+      <position x="7.92" y="-132.70" z="0.00" />
+      <position x="7.91" y="-134.70" z="0.00" />
+      <position x="7.90" y="-136.70" z="0.00" />
+      <position x="7.89" y="-138.70" z="0.00" />
+      <position x="7.89" y="-140.70" z="0.00" />
+      <position x="7.88" y="-142.70" z="0.00" />
+      <position x="7.87" y="-144.70" z="0.00" />
+      <position x="7.86" y="-146.70" z="0.00" />
+      <position x="7.85" y="-148.70" z="0.00" />
+      <position x="7.85" y="-150.70" z="0.00" />
+      <position x="7.84" y="-152.70" z="0.00" />
+      <position x="7.83" y="-154.70" z="0.00" />
+      <position x="7.82" y="-156.70" z="0.00" />
+    </waypoints>
+    <scenarios>
+      <scenario name="ClosedLaneCutIn_0002" type="ClosedLaneCutIn">
+        <cut_in_from value="left" />
+        <spawn_dist value="21.0" />
+        <speed_perc value="85" />
+        <same_lane_time value="0.0" />
+        <change_time value="2" />
+        <other_lane_time value="10" />
+        <end_dist value="50" />
+        <trigger_point x="7.985000" y="-115.700012" z="0.000000" yaw="-90.286477" />
+        <original_trigger_point x="7.980000" y="-116.700000" z="0.000000" yaw="-90.200000" />
+        <scenario_arm_point x="7.985000" y="-115.700012" z="0.000000" yaw="-90.286477" />
+        <cooperative_trigger_point x="7.965000" y="-119.699963" z="0.000000" yaw="-90.286477" />
+        <event_trigger_point x="7.920001" y="-132.699850" z="0.000000" yaw="-90.286477" />
+        <collision_point x="7.900001" y="-136.699800" z="0.000000" yaw="-90.286477" />
+        <cooperative_enabled value="true" />
+        <cooperative_notice_distance value="1.5" />
+        <cooperative_prompt value="The vehicle at position &lt;FRONT_CAR_POS&gt; will cut into the ego lane soon." />
+        <closed_loop_family value="vehicle_cut_in" />
+        <hint_lead_distance value="17.0" />
+        <event_lead_distance value="4.0" />
+        <event_trigger_tolerance value="0.5" />
+        <event_force_after_hint_time value="2.0" />
+        <event_trigger_policy value="distance_or_timeout" />
+        <closed_cut_in_min_speed_mps value="8.0" />
+        <closed_cut_in_initial_velocity_boost value="true" />
+        <closed_cut_in_initial_velocity_boost_duration value="1.0" />
+        <closed_cut_in_destroy_after_cut_in value="true" />
+        <closed_cut_in_direct_steer value="true" />
+        <closed_cut_in_turn_steer value="0.32" />
+        <closed_cut_in_counter_steer value="0.28" />
+        <closed_cut_in_direct_max_duration value="3.0" />
+        <force_all_traffic_lights_green value="true" />
+      </scenario>
+    </scenarios>
+  </route>
+</routes>

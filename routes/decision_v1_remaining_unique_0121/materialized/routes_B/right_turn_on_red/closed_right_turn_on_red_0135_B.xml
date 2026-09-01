@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="closed_right_turn_on_red_0135_B" town="Town12" source_route_id="s6_Town12_SignalizedJunctionRightTurn_2059_0" candidate_source="Bench2Drive-Base" candidate_source_clip="s6_Town12_SignalizedJunctionRightTurn_2059_0" candidate_route_length_m="79.876" candidate_geometry_sha256="d1747c691ffc8a70d3c0ec3987de1912211612bcb63cc541e35c4c55be9b7b04" benchmark_variant="B" paired_route_a_id="closed_right_turn_on_red_0135">
+    <weathers>
+      <weather route_percentage="0" cloudiness="40.0" precipitation="0.0" precipitation_deposits="10.0" wetness="10.0" wind_intensity="10.0" sun_azimuth_angle="250.0" sun_altitude_angle="8.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+      <weather route_percentage="100" cloudiness="40.0" precipitation="0.0" precipitation_deposits="10.0" wetness="10.0" wind_intensity="10.0" sun_azimuth_angle="250.0" sun_altitude_angle="8.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+    </weathers>
+    <waypoints>
+      <position x="1565.888900" y="3915.922200" z="359.779600" />
+      <position x="1532.630100" y="3867.420700" z="360.207400" />
+    </waypoints>
+    <scenarios>
+      <scenario name="ClosedSignalizedJunctionRightTurnOnRed_0135_B" type="ClosedSignalizedJunctionRightTurnOnRed">
+        <flow_speed value="12.0" />
+        <source_dist_interval from="10" to="50" />
+        <trigger_point x="1565.888900" y="3915.922200" z="359.779600" yaw="-170.770326" />
+        <original_trigger_point x="1531.465068" y="3909.835883" z="360.309001" yaw="-152.333908" />
+        <scenario_arm_point x="1545.160688" y="3912.554751" z="360.093611" yaw="-170.770326" />
+        <cooperative_trigger_point x="1541.212478" y="3911.913165" z="360.153310" yaw="-170.769407" />
+        <event_trigger_point x="1541.212478" y="3911.913165" z="360.153310" yaw="-170.769407" />
+        <collision_point x="1531.465100" y="3909.835900" z="360.309000" yaw="-156.542537" />
+        <cooperative_enabled value="false" />
+        <cooperative_notice_distance value="1.5" />
+        <cooperative_prompt value="The vehicle at position &lt;FRONT_CAR_POS&gt; will cross the ego right-turn path. Yield before turning right." />
+        <closed_loop_family value="right_turn_on_red_yield" />
+        <hint_lead_distance value="10.0" />
+        <event_lead_distance value="10.0" />
+        <event_trigger_tolerance value="1.5" />
+        <event_force_after_hint_time value="0.0" />
+        <event_trigger_policy value="disabled_route_b_control" />
+        <junction_id value="16095" />
+        <junction_arm_count value="4" />
+        <junction_topology value="cross_or_multiarm" />
+        <rtor_near_route_distance value="4.0" />
+        <scenario_activation_policy value="route_start" />
+        <route_b_control value="true" />
+      </scenario>
+    </scenarios>
+  </route>
+</routes>

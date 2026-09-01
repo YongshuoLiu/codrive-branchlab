@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="closed_ghost_driver_right_turn_0004" town="Town04" source_route_id="62">
+    <weathers>
+      <weather route_percentage="0" cloudiness="85.0" precipitation="25.0" precipitation_deposits="70.0" wetness="80.0" wind_intensity="10.0" sun_azimuth_angle="300.0" sun_altitude_angle="40.0" fog_density="4.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+      <weather route_percentage="100" cloudiness="85.0" precipitation="25.0" precipitation_deposits="70.0" wetness="80.0" wind_intensity="10.0" sun_azimuth_angle="300.0" sun_altitude_angle="40.0" fog_density="4.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+    </weathers>
+    <waypoints>
+      <position x="382.406677" y="-209.198471" z="0.000000" />
+      <position x="382.385773" y="-207.198578" z="0.000000" />
+      <position x="382.364899" y="-205.198685" z="0.000000" />
+      <position x="382.343994" y="-203.198792" z="0.000000" />
+      <position x="382.323090" y="-201.198898" z="0.000000" />
+      <position x="382.302216" y="-199.199005" z="0.000000" />
+      <position x="382.281311" y="-197.199112" z="0.000000" />
+      <position x="382.260406" y="-195.199234" z="0.000000" />
+      <position x="382.239532" y="-193.199341" z="0.000000" />
+      <position x="382.218628" y="-191.199448" z="0.000000" />
+      <position x="382.197723" y="-189.199554" z="0.000000" />
+      <position x="382.176849" y="-187.199661" z="0.000000" />
+      <position x="382.155945" y="-185.199783" z="0.000000" />
+      <position x="382.135040" y="-183.199875" z="0.000000" />
+      <position x="382.114136" y="-181.199997" z="0.000000" />
+      <position x="382.100000" y="-179.200000" z="0.000000" />
+      <position x="382.000000" y="-179.000000" z="0.000000" />
+      <position x="381.700000" y="-178.600000" z="0.000000" />
+      <position x="381.200000" y="-177.900000" z="0.000000" />
+      <position x="380.600000" y="-176.700000" z="0.000000" />
+      <position x="379.900000" y="-175.300000" z="0.000000" />
+      <position x="378.700000" y="-173.600000" z="0.000000" />
+      <position x="376.900000" y="-172.500000" z="0.000000" />
+      <position x="374.700000" y="-172.200000" z="0.000000" />
+      <position x="372.000000" y="-172.200000" z="0.000000" />
+      <position x="369.200000" y="-172.100000" z="0.000000" />
+      <position x="366.900000" y="-172.100000" z="0.000000" />
+      <position x="365.000000" y="-172.100000" z="0.000000" />
+      <position x="363.300000" y="-172.100000" z="0.000000" />
+      <position x="361.200000" y="-172.100000" z="0.000000" />
+      <position x="359.600000" y="-172.100000" z="0.000000" />
+      <position x="357.600000" y="-172.200000" z="0.000000" />
+      <position x="355.400000" y="-172.800000" z="0.000000" />
+      <position x="353.500000" y="-174.300000" z="0.000000" />
+      <position x="352.400000" y="-176.600000" z="0.000000" />
+      <position x="352.100000" y="-179.100000" z="0.000000" />
+      <position x="352.100000" y="-181.600000" z="0.000000" />
+      <position x="352.100000" y="-184.100000" z="0.000000" />
+      <position x="352.100000" y="-186.500000" z="0.000000" />
+      <position x="352.100000" y="-189.000000" z="0.000000" />
+      <position x="352.200000" y="-193.800000" z="0.000000" />
+      <position x="352.200000" y="-196.200000" z="0.000000" />
+      <position x="352.300000" y="-198.600000" z="0.000000" />
+    </waypoints>
+    <scenarios>
+      <scenario name="ClosedGhostDriverRightTurn_0004" type="ClosedGhostDriverRightTurn">
+        <ghost_speed value="8.5" />
+        <ghost_spawn_dist value="20" />
+        <trigger_point x="382.239532" y="-193.199295" z="0.000000" yaw="90.598866" />
+        <original_trigger_point x="369.200000" y="-172.100000" z="0.000000" yaw="178.500000" />
+        <scenario_arm_point x="382.239532" y="-193.199295" z="0.000000" yaw="90.598866" />
+        <cooperative_trigger_point x="382.197723" y="-189.199513" z="0.000000" yaw="90.598006" />
+        <event_trigger_point x="382.135040" y="-183.199841" z="0.000000" yaw="90.598870" />
+        <collision_point x="382.100000" y="-179.200000" z="0.000000" yaw="90.404960" />
+        <cooperative_enabled value="true" />
+        <cooperative_notice_distance value="1.5" />
+        <cooperative_prompt value="A wrong-way vehicle at position &lt;FRONT_CAR_POS&gt; will cross the ego right-turn path. Yield before turning right." />
+        <closed_loop_family value="wrong_way_right_turn" />
+        <hint_lead_distance value="10.0" />
+        <event_lead_distance value="4.0" />
+        <event_trigger_tolerance value="1.5" />
+        <event_force_after_hint_time value="2.0" />
+        <event_trigger_policy value="distance_or_timeout" />
+        <ghost_model value="vehicle.mini.cooper_s" />
+        <clear_ego_lane_front_background value="true" />
+        <ego_lane_front_clear_distance value="60.0" />
+        <disable_background_activity value="true" />
+      </scenario>
+    </scenarios>
+  </route>
+</routes>

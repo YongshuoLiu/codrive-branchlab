@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="closed_ghost_driver_left_turn_0144_B" town="Town13" source_route_id="s4_Town13_NonSignalizedJunctionLeftTurn_78_0" candidate_source="Bench2Drive-Base" candidate_source_clip="s4_Town13_NonSignalizedJunctionLeftTurn_78_0" candidate_route_length_m="80.000" candidate_geometry_sha256="f0832e9e996d8d4edda037dc01e35bdb8788b2fdcf6ed35dd5e5a4f9f649cb65" benchmark_variant="B" paired_route_a_id="closed_ghost_driver_left_turn_0144">
+    <weathers>
+      <weather route_percentage="0" cloudiness="85.0" precipitation="25.0" precipitation_deposits="70.0" wetness="80.0" wind_intensity="10.0" sun_azimuth_angle="300.0" sun_altitude_angle="40.0" fog_density="4.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+      <weather route_percentage="100" cloudiness="85.0" precipitation="25.0" precipitation_deposits="70.0" wetness="80.0" wind_intensity="10.0" sun_azimuth_angle="300.0" sun_altitude_angle="40.0" fog_density="4.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+    </weathers>
+    <waypoints>
+      <position x="3578.162700" y="701.648300" z="177.227200" />
+      <position x="3622.295000" y="660.278500" z="177.684800" />
+    </waypoints>
+    <scenarios>
+      <scenario name="ClosedGhostDriverLeftTurn_0144_B" type="ClosedGhostDriverLeftTurn">
+        <ghost_speed value="8.5" />
+        <ghost_spawn_dist value="25" />
+        <trigger_point x="3578.162700" y="701.648300" z="177.227200" yaw="0.120321" />
+        <original_trigger_point x="3613.126678" y="701.300505" z="177.661200" yaw="-12.543628" />
+        <scenario_arm_point x="3599.162673" y="701.693534" z="177.492797" yaw="0.120321" />
+        <cooperative_trigger_point x="3603.162664" y="701.702134" z="177.542491" yaw="0.120321" />
+        <event_trigger_point x="3609.162650" y="701.715022" z="177.616618" yaw="0.125085" />
+        <collision_point x="3613.126700" y="701.300500" z="177.661200" yaw="-12.543628" />
+        <cooperative_enabled value="false" />
+        <cooperative_notice_distance value="1.5" />
+        <cooperative_prompt value="A wrong-way vehicle at position &lt;FRONT_CAR_POS&gt; will cross the ego left-turn path. Yield before turning left." />
+        <closed_loop_family value="wrong_way_left_turn" />
+        <hint_lead_distance value="10.0" />
+        <event_lead_distance value="4.0" />
+        <event_trigger_tolerance value="1.5" />
+        <event_force_after_hint_time value="2.0" />
+        <event_trigger_policy value="disabled_route_b_control" />
+        <ghost_model value="vehicle.mini.cooper_s" />
+        <junction_id value="5188" />
+        <junction_arm_count value="4" />
+        <junction_topology value="cross_or_multiarm" />
+        <scenario_activation_policy value="route_start" />
+        <route_b_control value="true" />
+      </scenario>
+    </scenarios>
+  </route>
+</routes>

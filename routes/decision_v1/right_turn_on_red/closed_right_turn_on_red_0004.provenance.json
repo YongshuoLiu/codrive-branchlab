@@ -1,0 +1,30 @@
+{
+  "diagnostic": {
+    "junction_id": 332,
+    "left_conflict_entry_count": 1,
+    "trigger_minimum_route_trace_distance_m": 0.455,
+    "trigger_projection_distance_m": 0.004
+  },
+  "geometry_template": "/mnt/DATA/yongshuoliu/simlingo/pedestrian_dataset/huggingface_release/LANTERN/closedloop/routes/right_turn_on_red/closed_right_turn_on_red_0003.xml",
+  "geometry_template_route_id": "closed_right_turn_on_red_0003",
+  "geometry_template_sha256": "fc50b0fe46f6a24a65091f99d85ad7211fdcf9885852ca08ce3b7a78b0838195",
+  "output": "/mnt/DATA/yongshuoliu/simlingo/RL/routes/decision_v1/right_turn_on_red/closed_right_turn_on_red_0004.xml",
+  "output_route_id": "closed_right_turn_on_red_0004",
+  "output_sha256": "d862f3f99c7063db587674f55ed60dd4ee5f098408cedb28a11c69b2d17b11fa",
+  "repair": "replace unusable Town04 source route with an unused validated closed-loop S6 candidate while retaining the frozen route0004 identifier",
+  "replaced_source": "/mnt/DATA/yongshuoliu/simlingo/pedestrian_dataset/release/CoDrive/routes/right_turn_on_red/closed_right_turn_on_red_0004.xml",
+  "replaced_source_issue": "junction 850 has zero left-direction conflict entries and its trigger is outside the accepted route-trace distance",
+  "replaced_source_route_id": "62",
+  "replaced_source_sha256": "cb8928a03541090eeb6e3a9c9274e1811ba14b5a68decb507aa49e445885df24",
+  "scenario_name": "ClosedSignalizedJunctionRightTurnOnRed_0004",
+  "scenario_type": "ClosedSignalizedJunctionRightTurnOnRed",
+  "tuned_event_trigger": {
+    "reason": "reduce right-turn Maintain onset speed from 16.31 m/s to a physically maintainable common prefix",
+    "resulting_maintain_entry_speed_mps": 11.977861925210583,
+    "resulting_maintain_median_speed_deviation_mps": 0.24021101186638738,
+    "x": 154.04,
+    "y": 28.0
+  },
+  "source_route_id": "codrive_rtor_town01_0011",
+  "town": "Town01"
+}

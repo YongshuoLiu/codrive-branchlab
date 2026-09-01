@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="closed_lane_cut_in_0138_B" town="Town12" source_route_id="s2_Town12_StaticCutIn_934_0" candidate_source="Bench2Drive-Base" candidate_source_clip="s2_Town12_StaticCutIn_934_0" candidate_route_length_m="95.000" candidate_geometry_sha256="343e791da0ec3633f1d808d6fa3952b0458845b9e997c00a2d74b7790e3a34ad" benchmark_variant="B" paired_route_a_id="closed_lane_cut_in_0138">
+    <weathers>
+      <weather route_percentage="0" cloudiness="65.0" precipitation="0.0" precipitation_deposits="60.0" wetness="70.0" wind_intensity="10.0" sun_azimuth_angle="210.0" sun_altitude_angle="35.0" fog_density="5.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+      <weather route_percentage="100" cloudiness="65.0" precipitation="0.0" precipitation_deposits="60.0" wetness="70.0" wind_intensity="10.0" sun_azimuth_angle="210.0" sun_altitude_angle="35.0" fog_density="5.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+    </weathers>
+    <waypoints>
+      <position x="-2502.510300" y="5234.296600" z="378.681500" />
+      <position x="-2502.442100" y="5139.297200" z="378.254300" />
+    </waypoints>
+    <scenarios>
+      <scenario name="ClosedLaneCutIn_0138_B" type="ClosedLaneCutIn">
+        <cut_in_from value="left" />
+        <spawn_dist value="21.0" />
+        <speed_perc value="80" />
+        <same_lane_time value="0.0" />
+        <change_time value="2" />
+        <other_lane_time value="8" />
+        <end_dist value="50" />
+        <trigger_point x="-2502.529175" y="5205.296606" z="378.608302" yaw="-90.022918" />
+        <original_trigger_point x="-2502.526531" y="5209.296605" z="378.620440" yaw="-90.040107" />
+        <scenario_arm_point x="-2502.529175" y="5205.296606" z="378.608302" yaw="-90.022918" />
+        <cooperative_trigger_point x="-2502.531631" y="5201.296607" z="378.595384" yaw="-90.040107" />
+        <event_trigger_point x="-2502.540149" y="5188.296610" z="378.549090" yaw="-90.045837" />
+        <collision_point x="-2502.542793" y="5184.296611" z="378.533990" yaw="-90.028648" />
+        <cooperative_enabled value="false" />
+        <cooperative_notice_distance value="1.5" />
+        <cooperative_prompt value="The vehicle at position &lt;FRONT_CAR_POS&gt; will cut into the ego lane soon." />
+        <closed_loop_family value="vehicle_cut_in" />
+        <hint_lead_distance value="17.0" />
+        <event_lead_distance value="4.0" />
+        <event_trigger_tolerance value="0.5" />
+        <event_force_after_hint_time value="2.0" />
+        <event_trigger_policy value="disabled_route_b_control" />
+        <closed_cut_in_min_speed_mps value="6.5" />
+        <closed_cut_in_initial_velocity_boost value="false" />
+        <closed_cut_in_destroy_after_cut_in value="false" />
+        <closed_cut_in_direct_steer value="false" />
+        <background_clear_distance value="25.0" />
+        <force_all_traffic_lights_green value="false" />
+        <deterministic_actor value="true" />
+        <cut_in_model value="vehicle.audi.a2" />
+        <route_b_control value="true" />
+      </scenario>
+    </scenarios>
+  </route>
+</routes>

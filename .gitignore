@@ -1,0 +1,59 @@
+# CoDrive BranchLab publishes source, configuration, route definitions, and docs.
+# Raw/derived datasets and runtime products must never enter the repository.
+
+# Collected datasets and derived annotations
+/data/
+
+# Generated media, logs, runtime overlays, and campaign state
+/videos/
+/logs/
+/runtime/
+/manifests/
+/reward_audits/
+
+# Large/generated route-discovery metadata. Frozen XML route definitions remain tracked.
+routes/**/candidate_pool*.json
+routes/**/staging_manifest.json
+routes/**/*.manifest.json
+
+# Model artifacts and numerical dumps
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# Generated records and media outside the standard output directories
+*.jsonl
+*.jsonl.gz
+*.log
+*.pid
+*.lock
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Python/editor/build noise
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+.idea/
+.vscode/
+.DS_Store

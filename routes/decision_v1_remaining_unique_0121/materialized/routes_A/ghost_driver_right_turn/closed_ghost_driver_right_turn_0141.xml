@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="closed_ghost_driver_right_turn_0141" town="Town12" source_route_id="s5_Town12_SignalizedJunctionRightTurn_3622_0" candidate_source="Bench2Drive-Base" candidate_source_clip="s5_Town12_SignalizedJunctionRightTurn_3622_0" candidate_route_length_m="79.858" candidate_geometry_sha256="16c7cd86c37051579d32fd4d4712e53fe78c6faa4f342661b61cfb72eae7b44a">
+    <weathers>
+      <weather route_percentage="0" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="20.0" sun_altitude_angle="45.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+      <weather route_percentage="100" cloudiness="5.0" precipitation="0.0" precipitation_deposits="0.0" wetness="0.0" wind_intensity="10.0" sun_azimuth_angle="20.0" sun_altitude_angle="45.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+    </weathers>
+    <waypoints>
+      <position x="1588.141600" y="4509.440200" z="365.836100" />
+      <position x="1621.283300" y="4557.981900" z="366.080300" />
+    </waypoints>
+    <scenarios>
+      <scenario name="ClosedGhostDriverRightTurn_0141" type="ClosedGhostDriverRightTurn">
+        <ghost_speed value="7.0" />
+        <ghost_spawn_dist value="20" />
+        <trigger_point x="1588.141600" y="4509.440200" z="365.836100" yaw="9.299374" />
+        <original_trigger_point x="1622.554917" y="4515.584509" z="365.589100" yaw="27.821564" />
+        <scenario_arm_point x="1608.864249" y="4512.841816" z="365.686164" yaw="9.299374" />
+        <cooperative_trigger_point x="1612.811428" y="4513.489714" z="365.658964" yaw="9.301226" />
+        <event_trigger_point x="1618.732191" y="4514.461600" z="365.618330" yaw="9.326127" />
+        <collision_point x="1622.554900" y="4515.584500" z="365.589100" yaw="23.571806" />
+        <cooperative_enabled value="true" />
+        <cooperative_notice_distance value="1.5" />
+        <cooperative_prompt value="A wrong-way vehicle at position &lt;FRONT_CAR_POS&gt; will cross the ego right-turn path. Yield before turning right." />
+        <closed_loop_family value="wrong_way_right_turn" />
+        <hint_lead_distance value="10.0" />
+        <event_lead_distance value="4.0" />
+        <event_trigger_tolerance value="1.5" />
+        <event_force_after_hint_time value="2.0" />
+        <event_trigger_policy value="distance_or_timeout" />
+        <ghost_model value="vehicle.lincoln.mkz_2017" />
+        <junction_id value="10474" />
+        <junction_arm_count value="4" />
+        <junction_topology value="cross_or_multiarm" />
+        <scenario_activation_policy value="route_start" />
+      </scenario>
+    </scenarios>
+  </route>
+</routes>

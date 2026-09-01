@@ -1,0 +1,80 @@
+{
+  "schema_version": "counterfactual_decision_v1",
+  "project_root": "/mnt/DATA/yongshuoliu/simlingo",
+  "output_root": "/mnt/DATA/yongshuoliu/simlingo/RL/data/counterfactual_decision_v1/demo_current_pipeline_route0002",
+  "source_route_root": "/mnt/DATA/yongshuoliu/simlingo/RL/routes/decision_v1_demo_route0002",
+  "routes_per_scenario": 1,
+  "route_index_start": 2,
+  "scenarios": {
+    "S1": {
+      "family": "occluded_pedestrian",
+      "name": "Pedestrian Emergence",
+      "decisions": ["Accelerate", "Maintain", "Brake", "Stop", "LaneChangeLeft", "LaneChangeRight"]
+    },
+    "S2": {
+      "family": "lane_cut_in",
+      "name": "Vehicle Cut-In",
+      "decisions": ["Accelerate", "Maintain", "Brake", "Stop", "LaneChangeLeft", "LaneChangeRight"]
+    },
+    "S3": {
+      "family": "reveal_obstacle",
+      "name": "Obstacle Reveal",
+      "decisions": ["Accelerate", "Maintain", "Brake", "Stop", "LaneChangeLeft", "LaneChangeRight"]
+    },
+    "S4": {
+      "family": "ghost_driver_left_turn",
+      "name": "Left-Turn Wrong-Way",
+      "decisions": ["Accelerate", "Maintain", "Brake", "Stop"]
+    },
+    "S5": {
+      "family": "ghost_driver_right_turn",
+      "name": "Right-Turn Wrong-Way",
+      "decisions": ["Accelerate", "Maintain", "Brake", "Stop"]
+    },
+    "S6": {
+      "family": "right_turn_on_red",
+      "name": "Right-Turn Yield",
+      "decisions": ["Accelerate", "Maintain", "Brake", "Stop"]
+    }
+  },
+  "decision_parameters": {
+    "accelerate_delta_mps": 3.0,
+    "accelerate_cap_mps": 20,
+    "brake_speed_ratio": 0.45,
+    "brake_min_target_mps": 1.5,
+    "stop_speed_mps": 0.3,
+    "stop_hold_s": 0.5,
+    "lane_change_min_target_mps": 4.0,
+    "lane_change_pre_distance_m": 14.0,
+    "lane_change_post_distance_m": 28.0,
+    "lane_change_transition_distance_m": 6.0,
+    "lane_geometry_min_coverage": 0.8,
+    "lane_min_width_m": 2.4,
+    "lane_actor_rear_clearance_m": 15.0,
+    "lane_actor_front_clearance_m": 35.0,
+    "lane_actor_min_ttc_s": 4.0,
+    "deadlock_speed_mps": 0.1,
+    "deadlock_hold_s": 2.0,
+    "post_clear_deadlock_hold_s": 3.0,
+    "max_decision_active_s": 20.0,
+    "raw_actor_radius_m": 100.0
+  },
+  "quality_thresholds": {
+    "onset_position_tolerance_m": 0.75,
+    "onset_yaw_tolerance_deg": 1.0,
+    "onset_speed_tolerance_mps": 0.75,
+    "onset_hazard_position_tolerance_m": 0.75,
+    "minimum_saved_frames": 15,
+    "minimum_lane_center_hold_s": 0.5,
+    "maximum_lane_center_error_m": 1.0,
+    "minimum_full_lane_displacement_ratio": 0.65,
+    "stop_speed_mps": 0.3,
+    "minimum_stop_hold_s": 0.5,
+    "minimum_free_disk_gb": 20
+  },
+  "workers": [
+    {"slot": 0, "gpu": 0, "graphics_adapter": 1, "port": 32100, "tm_port": 42100},
+    {"slot": 1, "gpu": 1, "graphics_adapter": 2, "port": 32200, "tm_port": 42200},
+    {"slot": 2, "gpu": 2, "graphics_adapter": 0, "port": 32300, "tm_port": 42300}
+  ]
+}

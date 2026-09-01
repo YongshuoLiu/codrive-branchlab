@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="closed_lane_cut_in_0010" town="Town05" source_route_id="50008">
+    <weathers>
+      <weather route_percentage="0" cloudiness="40.0" precipitation="0.0" precipitation_deposits="10.0" wetness="10.0" wind_intensity="10.0" sun_azimuth_angle="250.0" sun_altitude_angle="8.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+      <weather route_percentage="100" cloudiness="40.0" precipitation="0.0" precipitation_deposits="10.0" wetness="10.0" wind_intensity="10.0" sun_azimuth_angle="250.0" sun_altitude_angle="8.0" fog_density="2.0" fog_distance="0.75" fog_falloff="0.1" scattering_intensity="1.0" mie_scattering_scale="0.03" />
+    </weathers>
+    <waypoints>
+      <position x="-131.61" y="13.90" z="-0.00" />
+      <position x="-131.58" y="15.88" z="0.00" />
+      <position x="-131.56" y="17.87" z="0.00" />
+      <position x="-131.55" y="19.87" z="0.00" />
+      <position x="-131.53" y="21.87" z="0.00" />
+      <position x="-131.51" y="23.87" z="0.00" />
+      <position x="-131.49" y="25.87" z="0.00" />
+      <position x="-131.48" y="27.87" z="0.00" />
+      <position x="-131.46" y="29.87" z="0.00" />
+      <position x="-131.44" y="31.87" z="0.00" />
+      <position x="-131.42" y="33.87" z="0.00" />
+      <position x="-131.40" y="35.87" z="0.00" />
+      <position x="-131.39" y="37.87" z="0.00" />
+      <position x="-131.37" y="39.87" z="0.00" />
+      <position x="-131.35" y="41.87" z="0.00" />
+      <position x="-131.33" y="43.87" z="0.00" />
+      <position x="-131.31" y="45.87" z="0.00" />
+      <position x="-131.30" y="47.87" z="0.00" />
+      <position x="-131.28" y="49.87" z="0.00" />
+      <position x="-131.26" y="51.87" z="0.00" />
+      <position x="-131.24" y="53.87" z="0.00" />
+      <position x="-131.23" y="55.87" z="0.00" />
+      <position x="-131.21" y="57.87" z="0.00" />
+      <position x="-131.19" y="59.87" z="0.00" />
+      <position x="-131.17" y="61.87" z="0.00" />
+      <position x="-131.15" y="63.87" z="0.00" />
+      <position x="-131.14" y="65.87" z="0.00" />
+      <position x="-131.12" y="67.87" z="0.00" />
+      <position x="-131.10" y="69.87" z="0.00" />
+      <position x="-131.08" y="71.87" z="0.00" />
+    </waypoints>
+    <scenarios>
+      <scenario name="ClosedLaneCutIn_0010" type="ClosedLaneCutIn">
+        <cut_in_from value="left" />
+        <spawn_dist value="21.0" />
+        <speed_perc value="80" />
+        <same_lane_time value="0.0" />
+        <change_time value="2" />
+        <other_lane_time value="8" />
+        <end_dist value="50" />
+        <trigger_point x="-131.610000" y="13.900000" z="0.000000" yaw="89.131949" />
+        <original_trigger_point x="-131.560000" y="17.870000" z="0.000000" yaw="89.200000" />
+        <scenario_arm_point x="-131.610000" y="13.900000" z="0.000000" yaw="89.131949" />
+        <cooperative_trigger_point x="-131.560000" y="17.870000" z="0.000000" yaw="89.200000" />
+        <event_trigger_point x="-131.510002" y="23.869775" z="0.000000" yaw="89.427061" />
+        <collision_point x="-131.480002" y="27.869650" z="0.000000" yaw="89.713523" />
+        <cooperative_enabled value="true" />
+        <cooperative_notice_distance value="1.5" />
+        <cooperative_prompt value="The vehicle at position &lt;FRONT_CAR_POS&gt; will cut into the ego lane soon." />
+        <closed_loop_family value="vehicle_cut_in" />
+        <hint_lead_distance value="10.0" />
+        <event_lead_distance value="4.0" />
+        <event_trigger_tolerance value="0.5" />
+        <event_force_after_hint_time value="2.0" />
+        <event_trigger_policy value="distance_or_timeout" />
+        <closed_cut_in_min_speed_mps value="6.5" />
+        <closed_cut_in_initial_velocity_boost value="false" />
+        <closed_cut_in_destroy_after_cut_in value="false" />
+        <closed_cut_in_direct_steer value="false" />
+        <background_clear_distance value="25.0" />
+        <clear_ego_lane_front_background value="true" />
+        <ego_lane_front_clear_distance value="60.0" />
+        <force_all_traffic_lights_green value="true" />
+        <deterministic_actor value="true" />
+        <cut_in_model value="vehicle.ford.mustang" />
+      </scenario>
+    </scenarios>
+  </route>
+</routes>
